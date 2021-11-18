@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: pbasaras/iccs:ubnutu_base_amd
+  repository: pbasaras/iccs:nginx
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
