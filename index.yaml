@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  nginx-chart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-11-18T15:48:08.710981136Z"
+    description: A Helm chart for Kubernetes
+    digest: 1908dbff516cdd5c5114d2493fd0021874985496eadd5028a8520e11a7cf8e18
+    name: nginx-chart
+    type: application
+    urls:
+    - https://pbasaras.github.io/iccs-helm-charts/nginx-chart-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-11-18T15:48:08.705954619Z"
