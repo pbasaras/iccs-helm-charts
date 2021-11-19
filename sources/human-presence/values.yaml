@@ -1,0 +1,35 @@
+# Default values for human-presence.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: human-presence-knf
+  namespace: default
+  labels:
+    env: human-presence
+spec:
+  nodeName: mk8s-master
+  containers:
+  - name: human-presence
+    image: pbasaras/iccs:nginx
+    imagePullPolicy: Always
+    ports:
+    - containerPort: 80
+
+replicaCount: 1
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+service:
+  type: ClusterIP
+  port: 80
+
+
+tolerations: []
+affinity: {}
