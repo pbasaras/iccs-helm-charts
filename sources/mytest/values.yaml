@@ -1,0 +1,23 @@
+# Default values for mytest.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    env: test
+spec:
+  nodeName: mk8s-master
+  containers:
+  - name: nginx
+    image: pbasaras/iccs:nginx
+    imagePullPolicy: Always
+
+
+
+
