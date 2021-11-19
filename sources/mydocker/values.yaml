@@ -4,6 +4,15 @@
 
 replicaCount: 1
 
+# registries specifies the docker registries to which the images must be pushed
+#registries:
+#  - name: https://hub.docker.com/u/pbasaras
+#    # (optional) the local tagged images will be retained if true else deleted after
+#    # pushing the image to the registty
+#    retain: false
+#    # (optional) images will not be pushed to the registry if set to false
+#    pull: true
+
 image:
   repository: pbasaras/iccs:nginx
   pullPolicy: IfNotPresent

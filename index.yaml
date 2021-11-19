@@ -1,11 +1,22 @@
 apiVersion: v1
 entries:
+  helm-chart-test:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-11-19T12:00:14.294155439Z"
+    description: A Helm chart for Kubernetes
+    digest: c4b74892c19a2aff65460173d8c3163a901633ed0bc8ffd8a05ec91280877b08
+    name: helm-chart-test
+    type: application
+    urls:
+    - https://pbasaras.github.io/iccs-helm-charts/helm-chart-test-0.1.0.tgz
+    version: 0.1.0
   mydocker:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-11-18T22:15:56.171270279+02:00"
+    created: "2021-11-19T12:00:14.295295713Z"
     description: A Helm chart for Kubernetes
-    digest: 4493267449e824b45bed2fa4219c7e6378cdd070d50b9413536cc4c8fae6fe69
+    digest: 4d406f932e6c015abd9627ee9f49bfb9574f3903d32b6b2a65b8c9e1d9c25e6a
     name: mydocker
     type: application
     urls:
@@ -14,12 +25,12 @@ entries:
   nginx-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-11-18T22:15:56.171982434+02:00"
+    created: "2021-11-19T12:00:14.295947902Z"
     description: A Helm chart for Kubernetes
-    digest: 1a8cc0adf773de050506b7524debe9166dec3491d01dd7bf0d7168d8ad665f76
+    digest: ae6f3a45704f17f20890d5c933cbfb08705cab4a6360cad2b6346ecb626ef5e0
     name: nginx-chart
     type: application
     urls:
     - https://pbasaras.github.io/iccs-helm-charts/nginx-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2021-11-18T22:15:56.170766344+02:00"
+generated: "2021-11-19T12:00:14.293755345Z"
