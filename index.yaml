@@ -3,9 +3,9 @@ entries:
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-11-19T14:30:31.88984303Z"
+    created: "2021-11-21T17:39:34.213709249+02:00"
     description: A Helm chart for Kubernetes
-    digest: 3af39588c4aab769ed37f742c27a58c1c8b9a7490aa8f2252747d7765af6fe44
+    digest: eb3e77afbec83ae7a0be8a3d4d2ce2309b8a7c164f7b2894c7a4e08c9563b594
     name: helm-chart-test
     type: application
     urls:
@@ -14,9 +14,9 @@ entries:
   human-presence:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-11-19T14:30:31.892060254Z"
+    created: "2021-11-21T17:39:34.214166046+02:00"
     description: A Helm chart for Kubernetes
-    digest: 99853fb93e977498c536d73c7503d6fd4f85eb0ae127acbb076d2c1a388881cd
+    digest: 8bdd9556298ea092000f7e9ddec376879baf6e9fe5d8a4d7592c73fde4e86f93
     name: human-presence
     type: application
     urls:
@@ -25,9 +25,9 @@ entries:
   mydocker:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-11-19T14:30:31.89366164Z"
+    created: "2021-11-21T17:39:34.214729909+02:00"
     description: A Helm chart for Kubernetes
-    digest: b7e3b16beaa8f3690e5c6bea92add0d8950c314cf92526362da0d4c917f4a96e
+    digest: 6eca5cbbfdd6ebb61a0080961481d0df6b4775fefdb4937544463bf6f5dd65ec
     name: mydocker
     type: application
     urls:
@@ -36,9 +36,9 @@ entries:
   mytest:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-11-19T14:30:31.894408041Z"
+    created: "2021-11-21T17:39:34.215062118+02:00"
     description: A Helm chart for Kubernetes
-    digest: 01e89f97e93198e3edacd9b1c17139b2101589f1c08f561ef5902e6235eacdd9
+    digest: 57ff065710cf9c074f2f0d3d0631a790d10e7803a28308622dfadaaebc861d8b
     name: mytest
     type: application
     urls:
@@ -47,12 +47,12 @@ entries:
   nginx-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-11-19T14:30:31.895896228Z"
+    created: "2021-11-21T17:39:34.215477577+02:00"
     description: A Helm chart for Kubernetes
-    digest: 75c5a7cf38854993b997cb38b2d8bd30f14e01caad330c0c35f9a1c165cfc1a0
+    digest: 0273dba3a72be47aa6a7ec6cdf1223f28eef692085aad10b4d2ca46bebd67340
     name: nginx-chart
     type: application
     urls:
     - https://pbasaras.github.io/iccs-helm-charts/nginx-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2021-11-19T14:30:31.88688381Z"
+generated: "2021-11-21T17:39:34.213358244+02:00"
