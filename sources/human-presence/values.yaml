@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-
+#replicaCount: 1
 
 apiVersion: v1
 kind: Pod
@@ -12,7 +12,7 @@ metadata:
   labels:
     env: human-presence
 spec:
-  nodeName: mk8s-master
+  nodeName: compute
   containers:
   - name: human-presence
     image: pbasaras/iccs:nginx
@@ -20,16 +20,4 @@ spec:
     ports:
     - containerPort: 80
 
-replicaCount: 1
-
-imagePullSecrets: []
-nameOverride: ""
-fullnameOverride: ""
-
-service:
-  type: ClusterIP
-  port: 80
-
-
-tolerations: []
-affinity: {}
+#replicaCount: 1
