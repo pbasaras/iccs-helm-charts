@@ -3,9 +3,9 @@ entries:
   human-presence:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-11-22T09:51:11.511413191Z"
+    created: "2021-11-22T13:28:40.105417782Z"
     description: 5G-LOGGINOV Helm Chart for Human Presence KNF (UC4)
-    digest: fa9446f2634a6c9e9918ed7717a00946b9affa9d0071e0424638e4054f7adf59
+    digest: e9a0e57117475d74adf32804fb38196ea80824420b2d1f94bffe381d0c4e0ac5
     name: human-presence
     type: application
     urls:
@@ -14,9 +14,9 @@ entries:
   mynginx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-11-22T09:51:11.515149459Z"
+    created: "2021-11-22T13:28:40.105944925Z"
     description: A Helm chart for Kubernetes
-    digest: 5094a9bd1c28e0e8c16ceb59287886592afcc148f4a6e2f2aa8148bd72962029
+    digest: dd96ab18e209b1bc092da67b4a5fa9b1f67ca3d7186cc1bae2fd468cf947020c
     name: mynginx
     type: application
     urls:
@@ -25,12 +25,12 @@ entries:
   test-jetson:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-11-22T09:51:11.516965554Z"
+    created: "2021-11-22T13:28:40.106539617Z"
     description: A Helm chart for Kubernetes
-    digest: bd535f7461566fb2b1bcafc30c035a876b10661ef46602e08522b102790e5e87
+    digest: b67cd7c042a8ff8031c29d4b949f0eb4261b653e397d6dc549b917a83ced344a
     name: test-jetson
     type: application
     urls:
     - https://pbasaras.github.io/iccs-helm-charts/test-jetson-0.1.0.tgz
     version: 0.1.0
-generated: "2021-11-22T09:51:11.510836182Z"
+generated: "2021-11-22T13:28:40.104780301Z"
