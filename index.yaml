@@ -3,12 +3,23 @@ entries:
   human-presence:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-11-22T07:06:24.34128464Z"
+    created: "2021-11-22T08:03:56.998065584Z"
     description: 5G-LOGGINOV Helm Chart for Human Presence KNF (UC4)
-    digest: cf9d463b0cb7024774c6098b222e87bce1e37f8498ec71801a524f28b242b9af
+    digest: 35557e7c10b3b13f7328b7c7efd62e9937c38923ce6df15dd68036fa73d9d5df
     name: human-presence
     type: application
     urls:
     - https://pbasaras.github.io/iccs-helm-charts/human-presence-0.1.0.tgz
     version: 0.1.0
-generated: "2021-11-22T07:06:24.340400641Z"
+  mynginx:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-11-22T08:03:57.00207853Z"
+    description: A Helm chart for Kubernetes
+    digest: 4b59c94486bd31d5acb1b8700e33f4302c07cc67b00883233333498298ccc1fe
+    name: mynginx
+    type: application
+    urls:
+    - https://pbasaras.github.io/iccs-helm-charts/mynginx-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-11-22T08:03:56.99329472Z"
