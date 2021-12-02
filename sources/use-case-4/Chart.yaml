@@ -1,6 +1,6 @@
 apiVersion: v2
-name: human-presence
-description: 5G-LOGGINOV Helm Chart for Human Presence KNF (UC4)
+name: use-case-4
+description: 5G-LOGINNOV Use Case 4 -- k8s orchestration of AI/ML for human presence detection inference in AGX Xavier Jetson device
 
 # A chart can be either an 'application' or a 'library' chart.
 #

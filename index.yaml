@@ -1,47 +1,25 @@
 apiVersion: v1
 entries:
-  hp-jetson:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2021-11-22T13:34:27.46586062Z"
-    description: A Helm chart for Kubernetes
-    digest: 7d71da273b7f7bbd7ac455ab244247e4812a5b2ea216287b951e618f86c0ec27
-    name: hp-jetson
-    type: application
-    urls:
-    - https://pbasaras.github.io/iccs-helm-charts/hp-jetson-0.1.0.tgz
-    version: 0.1.0
-  human-presence:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2021-11-22T13:34:27.46642042Z"
-    description: 5G-LOGGINOV Helm Chart for Human Presence KNF (UC4)
-    digest: d91ef24e9d6dea3a250e5f33f4e58974fea0e00aae35f8e3baff066bc707d157
-    name: human-presence
-    type: application
-    urls:
-    - https://pbasaras.github.io/iccs-helm-charts/human-presence-0.1.0.tgz
-    version: 0.1.0
   mynginx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-11-22T13:34:27.466937725Z"
+    created: "2021-12-02T13:04:23.328746675+02:00"
     description: A Helm chart for Kubernetes
-    digest: 722342c5b9a4658ee55906f0112c44f44e5091a392030b712151dd7c3692254c
+    digest: 31105f09b3c5ec154dafe3d48381f500e0650b87e2ebe2b21357441f9304d9d6
     name: mynginx
     type: application
     urls:
     - https://pbasaras.github.io/iccs-helm-charts/mynginx-0.1.0.tgz
     version: 0.1.0
-  test-jetson:
+  use-case-4:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-11-22T13:34:27.467470663Z"
-    description: A Helm chart for Kubernetes
-    digest: ec6e3fb2de8c2a32f2c3a1f485fbd5dcf29c109506a87bb2ca63b0b50e085f8d
-    name: test-jetson
+    created: "2021-12-02T13:04:23.330422801+02:00"
+    description: 5G-LOGINNOV Use Case 4 -- k8s orchestration of AI/ML for human presence detection inference in AGX Xavier Jetson device
+    digest: d1598ab6dbc4589b237174d365cdf6b515f81b16aa17d594e13ede61fcb1328b
+    name: use-case-4
     type: application
     urls:
-    - https://pbasaras.github.io/iccs-helm-charts/test-jetson-0.1.0.tgz
+    - https://pbasaras.github.io/iccs-helm-charts/use-case-4-0.1.0.tgz
     version: 0.1.0
-generated: "2021-11-22T13:34:27.465090154Z"
+generated: "2021-12-02T13:04:23.326633277+02:00"

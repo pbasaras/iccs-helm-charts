@@ -2,14 +2,14 @@
 apiVersion: autoscaling/v2beta1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ include "human-presence.fullname" . }}
+  name: {{ include "use-case-4.fullname" . }}
   labels:
-    {{- include "human-presence.labels" . | nindent 4 }}
+    {{- include "use-case-4.labels" . | nindent 4 }}
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ include "human-presence.fullname" . }}
+    name: {{ include "use-case-4.fullname" . }}
   minReplicas: {{ .Values.autoscaling.minReplicas }}
   maxReplicas: {{ .Values.autoscaling.maxReplicas }}
   metrics:
