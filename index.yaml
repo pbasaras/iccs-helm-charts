@@ -3,9 +3,9 @@ entries:
   mynginx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-01-06T18:41:02.601623134+02:00"
+    created: "2022-01-06T17:42:51.631181473Z"
     description: A Helm chart for Kubernetes
-    digest: 2569e43782e281b1de7d19064b196f03923502c7fd5e0ad706a258b36c08ef5e
+    digest: 880a8a405710207ee97d307cb2df4efd4598f483fddc4fd66e7a45e5e44dc13a
     name: mynginx
     type: application
     urls:
@@ -14,9 +14,9 @@ entries:
   test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-01-06T18:41:02.602388215+02:00"
+    created: "2022-01-06T17:42:51.631645452Z"
     description: A Helm chart for Kubernetes
-    digest: 79bbe714042309994bed0e520b83de2b0487760fe22061cbec20e91dd95ad7c8
+    digest: 4c1fd8ca904ac3e308d15622b7a8433b6dd2b4148dfe48b8f9514f920fb13c3d
     name: test
     type: application
     urls:
@@ -25,13 +25,12 @@ entries:
   use-case-4:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-01-06T18:41:02.602897245+02:00"
-    description: 5G-LOGINNOV Use Case 4 -- k8s orchestration of AI/ML for human presence
-      detection inference in AGX Xavier Jetson device
-    digest: 3800cff4fc29a5b2e7e572c2a707077b0b95de1f817871eb8872e12eea31a656
+    created: "2022-01-06T17:42:51.632083149Z"
+    description: 5G-LOGINNOV Use Case 4 -- k8s orchestration of AI/ML for human presence detection inference in AGX Xavier Jetson device
+    digest: 58c7a03dbd03e2767fc477bd86bb692c81efff1967bf7970e6829c5ca72781d6
     name: use-case-4
     type: application
     urls:
     - https://pbasaras.github.io/iccs-helm-charts/use-case-4-0.1.0.tgz
     version: 0.1.0
-generated: "2022-01-06T18:41:02.601129385+02:00"
+generated: "2022-01-06T17:42:51.630328948Z"
