@@ -3,9 +3,9 @@ entries:
   mynginx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-01-06T13:35:32.52864877+02:00"
+    created: "2022-01-06T13:40:48.006836923+02:00"
     description: A Helm chart for Kubernetes
-    digest: 313f12e743f6bd5f87c835f4ea896701227ff692bd3a9d2bb5fff63716ae72e7
+    digest: 62a854da548a70a005631ab2d3e0b0f67393ed0c720266db0dd9fb9d3f3d8cd0
     name: mynginx
     type: application
     urls:
@@ -14,13 +14,13 @@ entries:
   use-case-4:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-01-06T13:35:32.529785147+02:00"
+    created: "2022-01-06T13:40:48.007185362+02:00"
     description: 5G-LOGINNOV Use Case 4 -- k8s orchestration of AI/ML for human presence
       detection inference in AGX Xavier Jetson device
-    digest: c6f24a302f1c11fd3e58f91a333fcd49b8a2731c4112e5214ce23e83fd07972e
+    digest: 6cae9c6b06565b449c3eee5f0387af6e766e3d742c93da4d19fa7352abb9d9fb
     name: use-case-4
     type: application
     urls:
     - https://pbasaras.github.io/iccs-helm-charts/use-case-4-0.1.0.tgz
     version: 0.1.0
-generated: "2022-01-06T13:35:32.527300116+02:00"
+generated: "2022-01-06T13:40:48.006402086+02:00"
