@@ -1,0 +1,98 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "test.fullname" . }}
+  labels:
+    {{- include "test.labels" . | nindent 4 }}
+spec:
+  {{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "test.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "test.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "test.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      volumes:
+      - name: varlog
+        emptyDir: {}
+      containers:
+        - name: count
+          image: busybox
+          args:
+          - /bin/sh
+          - -c
+          - >
+            while true;
+            do
+              cat /sys/class/net/eth0/statistics/tx_bytes > /var/log/tx-bytes.log;
+              cat /sys/class/net/eth0/statistics/rx_bytes > /var/log/rx-bytes.log;
+              ping -c1 8.8.8.8 | awk -F'/' 'END{ print (/^round-trip/? $4:"FAIL") }' > /var/log/rtt.log;
+              sleep 1;
+            done
+          volumeMounts:
+          - name: varlog
+            mountPath: /var/log
+        - name: tx-bytes
+          image: busybox
+          args: [/bin/sh, -c, 'tail -n1 -f /var/log/tx-bytes.log']
+          volumeMounts:
+          - name: varlog
+            mountPath: /var/log
+        - name: rx-bytes
+          image: busybox
+          args: [/bin/sh, -c, 'tail -n1 -f /var/log/rx-bytes.log']
+          volumeMounts:
+          - name: varlog
+            mountPath: /var/log
+        - name: round-trip-time
+          image: busybox
+          args: [/bin/sh, -c, 'tail -n1 -f /var/log/rtt.log']
+          volumeMounts:
+          - name: varlog
+            mountPath: /var/log
+        - name: {{ .Chart.Name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
