@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+  labels:
+    app: nginx
+    svc: test-nginx
+spec:
+  type: LoadBalancer # this is identical to nodePort, however the LB is an outside service (not provided by k8s), e.g., from AWS, wheren the LB will be bind to the "nodePort" and the "workerNodes".
+  # so when we deploy this we will see the external IP in "pending" state.
+  selector:
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 80
+      nodePort: 30000 
