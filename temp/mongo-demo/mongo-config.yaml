@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: mongo-config
-data:
-  mongo-url: mongo-service
-  #all the key value pairs that we define as external configuration,within this config map
