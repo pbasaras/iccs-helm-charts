@@ -5,14 +5,14 @@
 replicaCount: 1
 
 image:
-  repository: human-presence-l4t
+  repository: pbasaras/iccs #human-presence-l4t
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
+  tag: "human-presence-detection-l4t"
 
 imagePullSecrets: []
 nameOverride: ""
-fullnameOverride: "human-presence-gpu-jetson-iot"
+fullnameOverride: "human-presence-jetson-iot"
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -39,7 +39,7 @@ securityContext:
 
 service:
   type: NodePort
-  port: 8090
+  port: 8080
 
 ingress:
   enabled: false

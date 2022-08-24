@@ -1,17 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "use-case-4.fullname" . }}
-  #name: human-presence
+  name: {{ include "collision-avoidance.fullname" . }}
   labels:
-    {{- include "use-case-4.labels" . | nindent 4 }}
+    {{- include "collision-avoidance.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
   selector:
     matchLabels:
-      {{- include "use-case-4.selectorLabels" . | nindent 6 }}
+      {{- include "collision-avoidance.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -19,13 +18,13 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "use-case-4.selectorLabels" . | nindent 8 }}
+        {{- include "collision-avoidance.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "use-case-4.serviceAccountName" . }}
+      serviceAccountName: {{ include "collision-avoidance.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       volumes:
@@ -62,13 +61,13 @@ spec:
               containerPort: 8000
               protocol: TCP
           #livenessProbe:
-          #httpGet:
-          #   path: /
-          #   port: http
+            #httpGet:
+              #path: /
+              #port: http
           #readinessProbe:
-          #  httpGet:
-          #    path: /
-          #    port: http
+            #httpGet:
+              #path: /
+              #port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}

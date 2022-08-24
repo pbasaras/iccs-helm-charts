@@ -1,4 +1,4 @@
-# Default values for container-seal.
+# Default values for human-presence.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
@@ -8,11 +8,11 @@ image:
   repository: pbasaras/iccs
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "seal-detection.v1"
+  tag: "human-presence-detection-l4t"
 
 imagePullSecrets: []
 nameOverride: ""
-fullnameOverride: "seal-detection-jetson-uc5"
+fullnameOverride: "people-detection-jetson-uc4"
 
 serviceAccount:
   # Specifies whether a service account should be created
