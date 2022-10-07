@@ -3,9 +3,9 @@ entries:
   collision-avoidance:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-24T17:32:40.649028687+03:00"
+    created: "2022-10-07T11:15:39.356400772+03:00"
     description: A Helm chart for Kubernetes
-    digest: 6917754d32462439f6346759130339ad63662cc660791ba591eebd3f932458cd
+    digest: 5f9bff1bc3985d09a25021d5a3d1effcbafc140a114dcfa4bfb8a46ba4ef35d3
     name: collision-avoidance
     type: application
     urls:
@@ -14,9 +14,9 @@ entries:
   container-seal:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-24T17:32:40.650400665+03:00"
+    created: "2022-10-07T11:15:39.357816358+03:00"
     description: 5G-LOGINNOV Use Case 5 -- k8s orchestration of AI/ML for container seal detection in AGX Xavier Jetson device
-    digest: 941f0ce240fd0aea2421d863f18b280fbee6b608dd47a186eceb658d0fac2fc8
+    digest: 78007bdb4f04a78710b462a8d07c8f529e4cf79f3abc271c5e832bc81aedb3b1
     name: container-seal
     type: application
     urls:
@@ -25,20 +25,31 @@ entries:
   human-presence:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-24T17:32:40.651770276+03:00"
+    created: "2022-10-07T11:15:39.359064+03:00"
     description: A Helm chart for Kubernetes
-    digest: d6ede521fe275ff55d7c8f361dadd41fdd1bdd851323259bcbd836d85d5ed6e3
+    digest: 05797afe0cb7f4ee334a600b94c7a10a232caee90589780ea269b82018cb7d04
     name: human-presence
     type: application
     urls:
     - https://pbasaras.github.io/iccs-helm-charts/human-presence-0.1.0.tgz
     version: 0.1.0
+  human-presence-xavier:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-10-07T11:15:39.360247126+03:00"
+    description: A Helm chart for Kubernetes
+    digest: 0ae0785966775946caca596a7046f8cc0bcd4b2878ab628fb2c8cbe1ccb4f68c
+    name: human-presence-xavier
+    type: application
+    urls:
+    - https://pbasaras.github.io/iccs-helm-charts/human-presence-xavier-0.1.0.tgz
+    version: 0.1.0
   mynginx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-24T17:32:40.652998151+03:00"
+    created: "2022-10-07T11:15:39.361459182+03:00"
     description: A Helm chart for Kubernetes
-    digest: 8990275ae27c67cb2d4a1381db22cf6eb6148e6ce9a94887f840584603be84ba
+    digest: c28f430ed2fea3a8c822a9a4c0740a39391454b91e0621cf6bfdad65cfa740e1
     name: mynginx
     type: application
     urls:
@@ -47,9 +58,9 @@ entries:
   network-log-agent:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-24T17:32:40.654416148+03:00"
+    created: "2022-10-07T11:15:39.362719881+03:00"
     description: Network log agent gathering pod network logs
-    digest: ade9bdd2889c15f6a07186c167152f0478d8e84a73d3bc6001433535c4fa89e2
+    digest: 837af2c4e36454e22f04218b2d1ce029150eb4c1b94c9902ea52b8ff1bcd7d5d
     name: network-log-agent
     type: application
     urls:
@@ -58,9 +69,9 @@ entries:
   test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-24T17:32:40.655859139+03:00"
+    created: "2022-10-07T11:15:39.363994179+03:00"
     description: A Helm chart for Kubernetes
-    digest: 81085a907faf7b8e0dbfda4a0d0396c68b0e7b5dc3bd4a2a3a2566c70b30e9ab
+    digest: f0bd8127bc8e0bed4d31ddb88e019dbf1c6e75fb212aa36428da0b762ec35e96
     name: test
     type: application
     urls:
@@ -69,12 +80,12 @@ entries:
   use-case-4:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-24T17:32:40.657226765+03:00"
+    created: "2022-10-07T11:15:39.365551147+03:00"
     description: 5G-LOGINNOV Use Case 4 -- k8s orchestration of AI/ML for human presence detection inference in AGX Xavier Jetson device
-    digest: 767231a1592dda5023204d4bafd5bc100b11aacf237253683b36210d0cd30256
+    digest: e2980f925107485da545614ecf28fe75470010546ed9a5a2d3f604a29f26fc42
     name: use-case-4
     type: application
     urls:
     - https://pbasaras.github.io/iccs-helm-charts/use-case-4-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-24T17:32:40.646832439+03:00"
+generated: "2022-10-07T11:15:39.354407816+03:00"
