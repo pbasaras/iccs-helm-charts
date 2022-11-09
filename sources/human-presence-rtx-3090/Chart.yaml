@@ -1,6 +1,6 @@
 apiVersion: v2
-name: human-presence-xavier
-description: Human Presence Detection based on NVIDIA Jetson AGX Xavier - Extreme Edge Application
+name: human-presence-rtx-3090
+description: Human Presence Detection based on NVIDIA GPU RTX 3090 - Cloud Application
 
 # A chart can be either an 'application' or a 'library' chart.
 #
