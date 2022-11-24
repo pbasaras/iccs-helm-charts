@@ -28,10 +28,18 @@ spec:
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       volumes:
+      - name: human-presence-inference-engine
+        hostPath:
+         path: /home/iccs/5g-loginnov/human-presence-gst
+         type: Directory
       - name: x11-volume
         hostPath:
          path: /tmp/.X11-unix
          type: Directory
+      - name: tz-config
+        hostPath:
+         path: /usr/share/zoneinfo/Europe/Athens
+         type: File
       containers:
         - name: {{ .Chart.Name }}
           env:
@@ -43,6 +51,10 @@ spec:
           volumeMounts:
           - mountPath: /tmp/.X11-unix
             name: x11-volume
+          - mountPath: /rtx-3090-base/human-presence-cloud
+            name: human-presence-inference-engine
+          - mountPath: /etc/localtime
+            name: tz-config
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           command: ["sleep"]
           args: ["infinity"]
