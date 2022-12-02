@@ -30,7 +30,11 @@ spec:
       volumes:
       - name: human-presence-inference-engine
         hostPath:
-         path: /home/iccs/5g-loginnov/human-presence-gst
+         path: /home/iccs/5g-loginnov/human-presence-rtx
+         type: Directory
+      - name: seal-detection-inference-engine
+        hostPath: 
+         path: /home/iccs/container-seal
          type: Directory
       - name: x11-volume
         hostPath:
@@ -53,6 +57,8 @@ spec:
             name: x11-volume
           - mountPath: /rtx-3090-base/human-presence-cloud
             name: human-presence-inference-engine
+          - mountPath: /rtx-3090-base/container-seal-cloud
+            name: seal-detection-inference-engine
           - mountPath: /etc/localtime
             name: tz-config
           imagePullPolicy: {{ .Values.image.pullPolicy }}
