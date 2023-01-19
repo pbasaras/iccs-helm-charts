@@ -76,7 +76,7 @@ autoscaling:
   #
   #
 nodeSelector:
-  placement: pillar
+  placement: crane
 
 tolerations: []
 
