@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "AI-extreme-edge-jetson-agx-xavier.fullname" . }}
+  labels:
+    {{- include "AI-extreme-edge-jetson-agx-xavier.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "AI-extreme-edge-jetson-agx-xavier.selectorLabels" . | nindent 4 }}

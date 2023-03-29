@@ -1,0 +1,92 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "AI-cloud-rtx-3090.fullname" . }}
+  labels:
+    {{- include "AI-cloud-rtx-3090.labels" . | nindent 4 }}
+spec:
+  {{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "AI-cloud-rtx-3090.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "AI-cloud-rtx-3090.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "AI-cloud-rtx-3090.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      volumes:
+      - name: human-presence-inference-engine
+        hostPath:
+         path: /home/iccs/5g-loginnov/human-presence-rtx
+         type: Directory
+      - name: seal-detection-inference-engine
+        hostPath: 
+         path: /home/iccs/container-seal
+         type: Directory
+      - name: x11-volume
+        hostPath:
+         path: /tmp/.X11-unix
+         type: Directory
+      - name: tz-config
+        hostPath:
+         path: /usr/share/zoneinfo/Europe/Athens
+         type: File
+      containers:
+        - name: {{ .Chart.Name }}
+          env:
+          - name: DISPLAY
+            value: :1
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          volumeMounts:
+          - mountPath: /tmp/.X11-unix
+            name: x11-volume
+          - mountPath: /rtx-3090-base/human-presence-cloud
+            name: human-presence-inference-engine
+          - mountPath: /rtx-3090-base/container-seal-cloud
+            name: seal-detection-inference-engine
+          - mountPath: /etc/localtime
+            name: tz-config
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          command: ["sleep"]
+          args: ["infinity"]
+          ports:
+            - name: http
+              containerPort: 8000
+              protocol: TCP
+          #livenessProbe:
+            #httpGet:
+              #path: /
+              #port: http
+          #readinessProbe:
+            #httpGet:
+              #path: /
+              #port: http
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
