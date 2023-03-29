@@ -1,5 +1,5 @@
 apiVersion: v2
-name: AI-extreme-edge-jetson-agx-xavier
+name: ai-extreme-edge-jetson-agx-xavier
 description: AI Extreme-edge Container -- NVIDIA Jetson AGX Xavier
 
 # A chart can be either an 'application' or a 'library' chart.

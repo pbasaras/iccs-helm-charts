@@ -1,5 +1,5 @@
 apiVersion: v2
-name: AI-cloud-rtx-3090
+name: ai-cloud-rtx-3090
 description: AI Cloud Container -- NVIDIA GPU RTX 3090
 
 # A chart can be either an 'application' or a 'library' chart.

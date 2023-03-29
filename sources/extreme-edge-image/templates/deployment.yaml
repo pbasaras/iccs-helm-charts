@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "AI-extreme-edge-jetson-agx-xavier.fullname" . }}
+  name: {{ include "ai-extreme-edge-jetson-agx-xavier.fullname" . }}
   labels:
-    {{- include "AI-extreme-edge-jetson-agx-xavier.labels" . | nindent 4 }}
+    {{- include "ai-extreme-edge-jetson-agx-xavier.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
   selector:
     matchLabels:
-      {{- include "AI-extreme-edge-jetson-agx-xavier.selectorLabels" . | nindent 6 }}
+      {{- include "ai-extreme-edge-jetson-agx-xavier.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -18,13 +18,13 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "AI-extreme-edge-jetson-agx-xavier.selectorLabels" . | nindent 8 }}
+        {{- include "ai-extreme-edge-jetson-agx-xavier.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "AI-extreme-edge-jetson-agx-xavier.serviceAccountName" . }}
+      serviceAccountName: {{ include "ai-extreme-edge-jetson-agx-xavier.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       volumes:

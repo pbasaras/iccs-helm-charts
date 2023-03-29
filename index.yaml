@@ -3,7 +3,7 @@ entries:
   AI-cloud-rtx-3090:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-29T16:19:08.099391655+03:00"
+    created: "2023-03-29T17:19:34.095917596+03:00"
     description: AI Cloud Container -- NVIDIA GPU RTX 3090
     digest: 12c49821b92fee03e5a3e2685ee561a76713f3bc708c9d36c9ee7b50c8fe66f0
     name: AI-cloud-rtx-3090
@@ -14,7 +14,7 @@ entries:
   AI-extreme-edge-jetson-agx-xavier:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-29T16:19:08.100739434+03:00"
+    created: "2023-03-29T17:19:34.097283133+03:00"
     description: AI Extreme-edge Container -- NVIDIA Jetson AGX Xavier
     digest: d6c5b06e9893e67c5c5cbe002c10cd99e10b03788905564c16b7a5f619de2779
     name: AI-extreme-edge-jetson-agx-xavier
@@ -22,18 +22,34 @@ entries:
     urls:
     - https://pbasaras.github.io/iccs-helm-charts/AI-extreme-edge-jetson-agx-xavier-0.1.0.tgz
     version: 0.1.0
+  ai-cloud-rtx-3090:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-03-29T17:19:34.098612122+03:00"
+    description: AI Cloud Container -- NVIDIA GPU RTX 3090
+    digest: eb9d479d52b337c5b7158fd5546054dc2b709163a85751e0301acf51553145c7
+    name: ai-cloud-rtx-3090
+    type: application
+    urls:
+    - https://pbasaras.github.io/iccs-helm-charts/ai-cloud-rtx-3090-0.1.0.tgz
+    version: 0.1.0
+  ai-extreme-edge-jetson-agx-xavier:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-03-29T17:19:34.099906945+03:00"
+    description: AI Extreme-edge Container -- NVIDIA Jetson AGX Xavier
+    digest: 6af21e31ba764f178a5c329e0bd8008172b9f6b757d69f7a6229fe171669a3d2
+    name: ai-extreme-edge-jetson-agx-xavier
+    type: application
+    urls:
+    - https://pbasaras.github.io/iccs-helm-charts/ai-extreme-edge-jetson-agx-xavier-0.1.0.tgz
+    version: 0.1.0
   collision-avoidance:
   - apiVersion: v2
     appVersion: 1.16.0
-<<<<<<< HEAD
-    created: "2023-03-29T16:19:08.102145889+03:00"
+    created: "2023-03-29T17:19:34.101196535+03:00"
     description: A Helm chart for Kubernetes
-    digest: 32731e5b018732622dfe048a4dcaf8fa964bf013fd44f40fdf745c1356fcdea8
-=======
-    created: "2023-01-13T17:28:15.154732563+02:00"
-    description: A Helm chart for Kubernetes
-    digest: bd044f423ab1deb72e84ca9dfe85a4781ff829295f1075d3412333f753f6e1c7
->>>>>>> dcaa56fa67d2973ca70a63cab190f74e41cd5bad
+    digest: 61f57111e13950a97c1f58d5aac5772f76318bfa28414b74f8b1ec5f6080d8a4
     name: collision-avoidance
     type: application
     urls:
@@ -42,15 +58,9 @@ entries:
   container-seal:
   - apiVersion: v2
     appVersion: 1.16.0
-<<<<<<< HEAD
-    created: "2023-03-29T16:19:08.103443412+03:00"
+    created: "2023-03-29T17:19:34.102206651+03:00"
     description: 5G-LOGINNOV Use Case 5 -- k8s orchestration of AI/ML for container seal detection in AGX Xavier Jetson device
-    digest: ca1e97b84c94aa982945087ddb524552a433b73d2e159419fb2f2286e2460ae7
-=======
-    created: "2023-01-13T17:28:15.155286992+02:00"
-    description: 5G-LOGINNOV Use Case 5 -- k8s orchestration of AI/ML for container seal detection in AGX Xavier Jetson device
-    digest: f2bd946889073cc9b912d548f1f9f47cd67fe164b3459d116ee430a7201103fb
->>>>>>> dcaa56fa67d2973ca70a63cab190f74e41cd5bad
+    digest: 7d707233f9952c6331d396b9a48b8269d9d6b63aa45d4fc4aa2de11a3502616e
     name: container-seal
     type: application
     urls:
@@ -59,15 +69,9 @@ entries:
   human-presence-rtx-3090:
   - apiVersion: v2
     appVersion: 1.16.0
-<<<<<<< HEAD
-    created: "2023-03-29T16:19:08.104789715+03:00"
+    created: "2023-03-29T17:19:34.102973663+03:00"
     description: Human Presence Detection based on NVIDIA GPU RTX 3090 - Cloud Application
-    digest: ba11369bfe25663684e7c5223b1321f73067442a58dada36d21f7932409a178e
-=======
-    created: "2023-01-13T17:28:15.155786591+02:00"
-    description: Human Presence Detection based on NVIDIA GPU RTX 3090 - Cloud Application
-    digest: 6d52193828c84bc8e79620b6991f319ec1e9a4487add9309c3c59d839aadac9c
->>>>>>> dcaa56fa67d2973ca70a63cab190f74e41cd5bad
+    digest: c940867afea833e9c86a76b5b54bd3615a4126bb24f5c81e840e97f952cb0733
     name: human-presence-rtx-3090
     type: application
     urls:
@@ -76,15 +80,9 @@ entries:
   human-presence-xavier:
   - apiVersion: v2
     appVersion: 1.16.0
-<<<<<<< HEAD
-    created: "2023-03-29T16:19:08.106053666+03:00"
+    created: "2023-03-29T17:19:34.103773022+03:00"
     description: Human Presence Detection based on NVIDIA Jetson AGX Xavier - Extreme Edge Application
-    digest: 7654cb95e95801fd42bc22dbfbdbcb94ae7e2e80d398d81f0af198cc10c8e02a
-=======
-    created: "2023-01-13T17:28:15.156283208+02:00"
-    description: Human Presence Detection based on NVIDIA Jetson AGX Xavier - Extreme Edge Application
-    digest: c9f3c22afe89511942242ab6e7a5a50a2e0e8f51d33a362e4d99226668b616fe
->>>>>>> dcaa56fa67d2973ca70a63cab190f74e41cd5bad
+    digest: a01adf32f388c68e389fe7cef991243a253d5f57ae6f56880e6e4868e2ab9fc8
     name: human-presence-xavier
     type: application
     urls:
@@ -93,15 +91,9 @@ entries:
   mynginx:
   - apiVersion: v2
     appVersion: 1.16.0
-<<<<<<< HEAD
-    created: "2023-03-29T16:19:08.10733453+03:00"
+    created: "2023-03-29T17:19:34.104564563+03:00"
     description: A Helm chart for Kubernetes
-    digest: 60262e5f74798799d5dd692beddaddb3b3738bfb8d195d44be4180837fd49ef7
-=======
-    created: "2023-01-13T17:28:15.156733326+02:00"
-    description: A Helm chart for Kubernetes
-    digest: cb41a690e56d4350e52e138c9d9ad9f47d1ec9dabb313a7016307e0c59640e3b
->>>>>>> dcaa56fa67d2973ca70a63cab190f74e41cd5bad
+    digest: 06dd78a1a90bafb708e412a42dc41997ef2cbef7dd49aa18450aadd1b2cd8564
     name: mynginx
     type: application
     urls:
@@ -110,22 +102,12 @@ entries:
   network-log-agent:
   - apiVersion: v2
     appVersion: 1.16.0
-<<<<<<< HEAD
-    created: "2023-03-29T16:19:08.108872752+03:00"
+    created: "2023-03-29T17:19:34.105394762+03:00"
     description: Network log agent gathering pod network logs
-    digest: c42e81d939a57c587849d0e21e17236defc0683d3b672efd1c4e5d07f865bb34
-=======
-    created: "2023-01-13T17:28:15.157246016+02:00"
-    description: Network log agent gathering pod network logs
-    digest: a55bf118653a32d3b0fa5042ae109179e6b08606e0e2b27c51a838dc4453c014
->>>>>>> dcaa56fa67d2973ca70a63cab190f74e41cd5bad
+    digest: c1a8ff7b63d36403e1b3c8008084cb065f9ce62f8b13045b0ef1e711a09d370c
     name: network-log-agent
     type: application
     urls:
     - https://pbasaras.github.io/iccs-helm-charts/network-log-agent-0.1.0.tgz
     version: 0.1.0
-<<<<<<< HEAD
-generated: "2023-03-29T16:19:08.097664691+03:00"
-=======
-generated: "2023-01-13T17:28:15.153498409+02:00"
->>>>>>> dcaa56fa67d2973ca70a63cab190f74e41cd5bad
+generated: "2023-03-29T17:19:34.094201396+03:00"

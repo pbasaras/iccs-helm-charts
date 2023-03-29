@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "AI-cloud-rtx-3090.fullname" . }}
+  name: {{ include "ai-cloud-rtx-3090.fullname" . }}
   labels:
-    {{- include "AI-cloud-rtx-3090.labels" . | nindent 4 }}
+    {{- include "ai-cloud-rtx-3090.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
   selector:
     matchLabels:
-      {{- include "AI-cloud-rtx-3090.selectorLabels" . | nindent 6 }}
+      {{- include "ai-cloud-rtx-3090.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -18,13 +18,13 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "AI-cloud-rtx-3090.selectorLabels" . | nindent 8 }}
+        {{- include "ai-cloud-rtx-3090.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "AI-cloud-rtx-3090.serviceAccountName" . }}
+      serviceAccountName: {{ include "ai-cloud-rtx-3090.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       volumes:

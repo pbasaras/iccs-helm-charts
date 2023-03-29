@@ -2,14 +2,14 @@
 apiVersion: autoscaling/v2beta1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ include "AI-extreme-edge-jetson-agx-xavier.fullname" . }}
+  name: {{ include "ai-extreme-edge-jetson-agx-xavier.fullname" . }}
   labels:
-    {{- include "AI-extreme-edge-jetson-agx-xavier.labels" . | nindent 4 }}
+    {{- include "ai-extreme-edge-jetson-agx-xavier.labels" . | nindent 4 }}
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ include "AI-extreme-edge-jetson-agx-xavier.fullname" . }}
+    name: {{ include "ai-extreme-edge-jetson-agx-xavier.fullname" . }}
   minReplicas: {{ .Values.autoscaling.minReplicas }}
   maxReplicas: {{ .Values.autoscaling.maxReplicas }}
   metrics:
