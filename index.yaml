@@ -3,9 +3,9 @@ entries:
   ai-cloud-rtx-3090:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-30T10:42:31.156049315+03:00"
+    created: "2023-03-30T10:46:34.226149558+03:00"
     description: AI Cloud Container -- NVIDIA GPU RTX 3090
-    digest: 1c47702f65c566d438c67f4ddfdca7682a1d73736c25b57e1bdf67996c86e35b
+    digest: 272993ba74cd31582f590ed18634173f20e08c1a8e07ac58a58d90b594a882da
     name: ai-cloud-rtx-3090
     type: application
     urls:
@@ -14,9 +14,9 @@ entries:
   ai-extreme-edge-jetson-agx-xavier:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-30T10:42:31.15653058+03:00"
+    created: "2023-03-30T10:46:34.226714476+03:00"
     description: AI Extreme-edge Container -- NVIDIA Jetson AGX Xavier
-    digest: 6d83d208278b96923cc77aadeca498856a47f53f45843c188c5da8cc5b4ee7ba
+    digest: c5a441ab37186f1e9e5c21ded76fe8cb54ce6986c842284699069ec3871603be
     name: ai-extreme-edge-jetson-agx-xavier
     type: application
     urls:
@@ -25,9 +25,9 @@ entries:
   collision-avoidance:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-30T10:42:31.15703735+03:00"
-    description: A Helm chart for Kubernetes
-    digest: 5911f1df507d1acde7415b52a87b279fb6ac1794c2f519ef80a5ec920dc90cf7
+    created: "2023-03-30T10:46:34.22722811+03:00"
+    description: 5G&AI enabled collision warning service
+    digest: 79ac7f7f836e499ab70ea646fd47b7b9bd2699b4a062d7fcc36e68e55deab53f
     name: collision-avoidance
     type: application
     urls:
@@ -36,9 +36,9 @@ entries:
   container-seal:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-30T10:42:31.157526743+03:00"
+    created: "2023-03-30T10:46:34.227731084+03:00"
     description: 5G-LOGINNOV Use Case 5 -- k8s orchestration of AI/ML for container seal detection in AGX Xavier Jetson device
-    digest: a0839069069c624a33606d0a01f8fb295d23630e77104704253beb6bda2c5055
+    digest: 79d05d24324536dba5727f279b6741b463268c27064f0b5eb42ada6b4284d0d9
     name: container-seal
     type: application
     urls:
@@ -47,9 +47,9 @@ entries:
   human-presence-rtx-3090:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-30T10:42:31.158052983+03:00"
+    created: "2023-03-30T10:46:34.228209678+03:00"
     description: Human Presence Detection based on NVIDIA GPU RTX 3090 - Cloud Application
-    digest: 82b33b3db6625cb7f1293d386d46fa49c984b792535e2fc2ca45e63b1e079cac
+    digest: 9107f87126ef3998041276d15e868a1556ec39d5ef4337109943c68212b7f1bb
     name: human-presence-rtx-3090
     type: application
     urls:
@@ -58,9 +58,9 @@ entries:
   human-presence-xavier:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-30T10:42:31.158557498+03:00"
+    created: "2023-03-30T10:46:34.228720569+03:00"
     description: Human Presence Detection based on NVIDIA Jetson AGX Xavier - Extreme Edge Application
-    digest: fb35b18da11d4c3b70d4bc6a97a68bcbc0f57143fb65a428859cdd65fce7adaf
+    digest: 4a0524b62795ac81cb6500100d8e2fc05bd614de9f685e2b07b055aacc39669c
     name: human-presence-xavier
     type: application
     urls:
@@ -69,9 +69,9 @@ entries:
   mynginx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-30T10:42:31.159092246+03:00"
-    description: A Helm chart for Kubernetes
-    digest: 9cf0326fdf40beefc8881ff74309b7a291f5d9b01d638172c089037ab675bff0
+    created: "2023-03-30T10:46:34.229226975+03:00"
+    description: Minor test template for testing OSM with Kubernetes
+    digest: 5785675a21f88a6848f26295753a71215f287ea225017f6bf72a27121bec2157
     name: mynginx
     type: application
     urls:
@@ -80,12 +80,12 @@ entries:
   network-log-agent:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-30T10:42:31.159609383+03:00"
+    created: "2023-03-30T10:46:34.229750605+03:00"
     description: Network log agent gathering pod network logs
-    digest: da1503d9d9ffe0d19c94214d7d11993dde6ab59544a66d4c8fcb26f7c522f64e
+    digest: c661c9dad5934238f0715740d8c0a756e646f355e90c4112290fb43927fc9c63
     name: network-log-agent
     type: application
     urls:
     - https://pbasaras.github.io/iccs-helm-charts/network-log-agent-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-30T10:42:31.155283359+03:00"
+generated: "2023-03-30T10:46:34.22549405+03:00"
