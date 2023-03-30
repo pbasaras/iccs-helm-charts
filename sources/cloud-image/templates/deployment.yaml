@@ -34,7 +34,7 @@ spec:
          type: Directory
       - name: seal-detection-inference-engine
         hostPath: 
-         path: /home/iccs/container-seal
+         path: /home/iccs/5g-loginnov/container-seal
          type: Directory
       - name: x11-volume
         hostPath:
