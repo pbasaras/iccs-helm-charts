@@ -3,9 +3,9 @@ entries:
   ai-cloud-rtx-3090:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-31T13:47:30.53603197+03:00"
+    created: "2023-08-31T10:18:03.855709001+03:00"
     description: AI Cloud Container -- NVIDIA GPU RTX 3090
-    digest: 687e260ce0071362af26fbca25ac9935287d19bcf51c8a850000cfb671d2376c
+    digest: ae417a43a7541612ca8a1fc92f6177b60d84502c60e9f8dbbdc1a7d6710d009c
     name: ai-cloud-rtx-3090
     type: application
     urls:
@@ -14,9 +14,9 @@ entries:
   ai-extreme-edge-jetson-agx-xavier:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-31T13:47:30.536554756+03:00"
+    created: "2023-08-31T10:18:03.856336359+03:00"
     description: AI Extreme-edge Container -- NVIDIA Jetson AGX Xavier
-    digest: 85b0d2d41201db845a0cf89eff34a0cec974bc3c189171bbe19b8c27df1ead55
+    digest: 4ebb2e6518ca25d3052b575078b601c764f014fa8c2512b8938820252a5c4e2f
     name: ai-extreme-edge-jetson-agx-xavier
     type: application
     urls:
@@ -25,9 +25,9 @@ entries:
   collision-avoidance:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-31T13:47:30.537094767+03:00"
+    created: "2023-08-31T10:18:03.856851554+03:00"
     description: 5G&AI enabled collision warning service
-    digest: b53d0ee3af68abd8566ece022b07937fd4774e93edae23f5634ac67c5e9d300e
+    digest: 41d3d7146da7df71bcb63721ffa7ed61059052310b28ee71c3b2b03e542cdfd7
     name: collision-avoidance
     type: application
     urls:
@@ -36,9 +36,9 @@ entries:
   container-seal:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-31T13:47:30.537606605+03:00"
+    created: "2023-08-31T10:18:03.857677265+03:00"
     description: 5G-LOGINNOV Use Case 5 -- k8s orchestration of AI/ML for container seal detection in AGX Xavier Jetson device
-    digest: 8531b91c0611418c182ca6668fb6df3587b73a241671f27fca266a604ebe2be5
+    digest: 00c1bccc8e22339032dd856b4f15ccd61cee92ca6ab121819ce66301b178e083
     name: container-seal
     type: application
     urls:
@@ -47,9 +47,9 @@ entries:
   human-presence-rtx-3090:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-31T13:47:30.538083661+03:00"
+    created: "2023-08-31T10:18:03.858444506+03:00"
     description: Human Presence Detection based on NVIDIA GPU RTX 3090 - Cloud Application
-    digest: 89d720d3f4d651fa2a8bd3630472f46f5517e0c2ab8c9fed979ee63189297f77
+    digest: 02eabe4a1fc24f350f37ea612ced04881579649390997898cc17fe668b98ccda
     name: human-presence-rtx-3090
     type: application
     urls:
@@ -58,9 +58,9 @@ entries:
   human-presence-xavier:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-31T13:47:30.538600228+03:00"
+    created: "2023-08-31T10:18:03.858954125+03:00"
     description: Human Presence Detection based on NVIDIA Jetson AGX Xavier - Extreme Edge Application
-    digest: 7193881143237fc6660c6d29f67d30052e44155a392641bc13f81a3803f3946a
+    digest: c6b087498e33a5b4c86a2ee3536e6a8813f013ea82a1dcc0b41df463de808649
     name: human-presence-xavier
     type: application
     urls:
@@ -69,9 +69,9 @@ entries:
   mynginx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-31T13:47:30.539123271+03:00"
+    created: "2023-08-31T10:18:03.859482988+03:00"
     description: Minor test template for testing OSM with Kubernetes
-    digest: a9f8fe4024d03f71e0fd0ded134a024a172621b643f182a22bda975a43993cab
+    digest: 9e3bb7eaaf0bd8e3aab3998582d1691b197e19fc0016bd827c2e63f555618c81
     name: mynginx
     type: application
     urls:
@@ -80,12 +80,12 @@ entries:
   network-log-agent:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-31T13:47:30.539705774+03:00"
+    created: "2023-08-31T10:18:03.860029085+03:00"
     description: Network log agent gathering pod network logs
-    digest: 9f42b0310df6aa2e2c068055c81b21d171355e45b892b6d4676f7a4078437734
+    digest: b2c5379de64c153086761f6af4fc537760be2dcdd7f183097e06b3c865c0bb09
     name: network-log-agent
     type: application
     urls:
     - https://pbasaras.github.io/iccs-helm-charts/network-log-agent-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-31T13:47:30.535318156+03:00"
+generated: "2023-08-31T10:18:03.854740719+03:00"
