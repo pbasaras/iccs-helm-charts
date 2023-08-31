@@ -38,6 +38,12 @@ spec:
       - name: nvpm-addition
         hostPath:
          path: /etc/nvpmodel.conf
+      - name: tegrastats
+        hostPath:
+         path: /usr/bin/tegrastats
+      - name: results
+        hostPath: 
+         path: /home/iccs/results
       containers:
         - name: {{ .Chart.Name }}
           env:
@@ -53,6 +59,10 @@ spec:
             name: nvpmodel-mount
           - mountPath: /etc/nvpmodel.conf
             name: nvpm-addition
+          - mountPath: /usr/bin/tegrastats
+            name: tegrastats
+          - mountPath: /5G-LOGINNOV/results
+            name: results
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           command: ["sleep"]
           args: ["infinity"]

@@ -8,8 +8,8 @@ image:
   repository: pbasaras/iccs
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "xavier-basic-v7"
-  #tag: "human-presence-xavier-v3"
+  #tag: "xavier-basic-v7"
+  tag: "human-presence-xavier-v3"
 
 imagePullSecrets: []
 nameOverride: ""

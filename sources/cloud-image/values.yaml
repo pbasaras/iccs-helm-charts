@@ -5,10 +5,14 @@
 replicaCount: 1
 
 image:
+  #repository: detectron2 #pbasaras/iccs
+  #repository: nvcr.io/nvidia/cuda #:10.0-cudnn7-devel-ubuntu18.04
   repository: pbasaras/iccs
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "rtx-3090-base"
+  #tag: "10.0-cudnn7-devel-ubuntu18.04"
+  #tag: "rtx-3090-base"
+  tag: "cloud-trials-v1.0"
 
 imagePullSecrets: []
 nameOverride: ""
