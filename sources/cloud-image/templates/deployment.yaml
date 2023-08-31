@@ -36,6 +36,14 @@ spec:
         hostPath: 
          path: /home/iccs/5g-loginnov/container-seal
          type: Directory
+      - name: seal-trials-inf-engine
+        hostPath:
+         path: /home/iccs/seal-trials
+         type: Directory
+      - name: human-trials-inf-engine
+        hostPath:
+         path: /home/iccs/human-trials
+         type: Directory
       - name: x11-volume
         hostPath:
          path: /tmp/.X11-unix
@@ -59,6 +67,10 @@ spec:
             name: human-presence-inference-engine
           - mountPath: /rtx-3090-base/container-seal-cloud
             name: seal-detection-inference-engine
+          - mountPath: /rtx-3090-base/seal-trials
+            name: seal-trials-inf-engine
+          - mountPath: /rtx-3090-base/human-trials
+            name: human-trials-inf-engine
           - mountPath: /etc/localtime
             name: tz-config
           imagePullPolicy: {{ .Values.image.pullPolicy }}
